@@ -59,11 +59,6 @@ namespace Task1
 
             public void Print()
             {
-                PrintBaseProperties();
-            }
-
-            protected void PrintBaseProperties()
-            {
                 Console.WriteLine("Адрес: {0}", this.Address);
                 Console.WriteLine("Длина здания: {0}", this.Length);
                 Console.WriteLine("Ширина здания: {0}", this.Width);
@@ -81,7 +76,7 @@ namespace Task1
 
             public new void Print()
             {
-                this.PrintBaseProperties();
+                base.Print();
                 Console.WriteLine("Количество этажей: {0}", this.Floors);
             }
         }
